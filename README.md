@@ -74,7 +74,7 @@ verify server status at: http://localhost:8000/health in your browser.
 
 ### Frontend Setup
 
-create a folder name backend in your main repo.
+create a folder name forntend in your main repo.
 ```bash
 cd frontend
 ```
