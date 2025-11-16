@@ -8,7 +8,7 @@ def convert_conll2003_to_spacy():
     print("(This may take 2-3 minutes on first download)\n")
     
     # Load dataset
-    dataset = load_dataset("conll2003")
+    dataset = load_dataset("lhoestq/conll2003")
     
     # Get training split
     train_data = dataset["train"]
@@ -109,7 +109,7 @@ def convert_wnut17_to_spacy():
     print("(This may take 1-2 minutes)\n")
     
     # Load dataset
-    dataset = load_dataset("wnut_17")
+    dataset = load_dataset("wnut_17", trust_remote_code=True)
     
     # Get training split
     train_data = dataset["train"]
