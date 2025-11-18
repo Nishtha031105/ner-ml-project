@@ -1,30 +1,7 @@
 # Named Entity Recognition
 
-A full-stack web application that automatically extracts and identifies named entities from text using advanced Natural Language Processing (NLP) and Machine Learning (ML) models. The system detects entities such as persons, organizations, locations, products, dates, monetary values, and provides analytics, sentiment analysis, contextual categorization, and multi-document processing.
-
----
-
-**Advanced Named Entity Recognition and Text Analytics Tool**
-
-### Objective
-To build an easy-to-use, real-time, web-based NER system that:
-- Automatically extracts entities from unstructured text
-- Works on both text input and uploaded documents
-- Provides contextual insights, sentiment analysis, and an analytical dashboard
-- Enables non-technical users to perform NLP tasks without coding
-- Achieves high accuracy and fast response using spaCy and Transformer-based models
-
----
-
-This tool provides an intuitive interface to perform Named Entity Recognition (NER) on any text. Users can:
-
-✔ Paste text or upload documents  
-✔ Analyze sentiment  
-✔ View entity categories and counts  
-✔ Compare multiple documents  
-✔ Explore insights using the dashboard
-
-It supports real-time highlighting, side-panel entity aggregation, and multi-document analysis. The backend uses spaCy and HuggingFace Transformers, giving state-of-the-art performance across news, business, academic, and social media text.
+Objective : To build a web application that automatically extracts and identifies named entities from text using advanced Natural Language Processing (NLP) and Machine Learning (ML) models. The system detects entities such as persons, organizations, locations, products, dates, monetary values, and provides analytics, sentiment analysis, contextual categorization, and multi-document processing.
+Features: Text highlighting, entity aggregation, and multi-doc analysis. Backend uses spaCy and HuggingFace Transformers, for better performance across news, business, academic, and social media text.
 
 ---
 
@@ -37,8 +14,6 @@ It supports real-time highlighting, side-panel entity aggregation, and multi-doc
 - **Sentiment Analysis**
 - **Contextual Categorization** (e.g., grouping similar entities)
 - **Analytical Dashboard** with charts & entity frequency
-- **Multi-Document Support** for batch analysis
-- **Document Upload** (PDF/text)
 - **Model Switching** (spaCy small / Transformer model)
 
 ---
