@@ -1,12 +1,9 @@
-# 📘 Named Entity Recognition (NER) Tool
+# Named Entity Recognition
 
 A full-stack web application that automatically extracts and identifies named entities from text using advanced Natural Language Processing (NLP) and Machine Learning (ML) models. The system detects entities such as persons, organizations, locations, products, dates, monetary values, and provides analytics, sentiment analysis, contextual categorization, and multi-document processing.
 
 ---
 
-## 📌 Project Title & Objective
-
-### Project Title
 **Advanced Named Entity Recognition and Text Analytics Tool**
 
 ### Objective
@@ -19,8 +16,6 @@ To build an easy-to-use, real-time, web-based NER system that:
 
 ---
 
-## 📂 Overview
-
 This tool provides an intuitive interface to perform Named Entity Recognition (NER) on any text. Users can:
 
 ✔ Paste text or upload documents  
@@ -32,8 +27,6 @@ This tool provides an intuitive interface to perform Named Entity Recognition (N
 It supports real-time highlighting, side-panel entity aggregation, and multi-document analysis. The backend uses spaCy and HuggingFace Transformers, giving state-of-the-art performance across news, business, academic, and social media text.
 
 ---
-
-## ✨ Features
 
 ### Entity Extraction
 - People, organizations, countries, cities, dates, money, events, products, etc.
@@ -48,14 +41,7 @@ It supports real-time highlighting, side-panel entity aggregation, and multi-doc
 - **Document Upload** (PDF/text)
 - **Model Switching** (spaCy small / Transformer model)
 
-### Technical Features
-- Fast real-time response (<500 ms)
-- JSON-based API responses
-- Modern UI with React + Tailwind
-
 ---
-
-## 🧵 Technology Stack
 
 ### Backend
 - Python 3.10+
@@ -74,15 +60,15 @@ Install: Python, Node.js, npm, Git
 
 ---
 
-## 📥 Installation & Setup
+## Setup
 
-### 1. Clone Repository
+### 1. Clone Repo
 ```bash
 git clone https://github.com/YOUR_USER_NAME/ner-ml-project.git
 cd ner-ml-project
 ```
 
-### 2. Backend Setup
+### 2. Backend
 ```bash
 mkdir backend
 cd backend
@@ -111,10 +97,10 @@ uvicorn app.main:app --reload --port 8000
 - **Backend URL:** http://localhost:8000
 - **Health check:** http://localhost:8000/health
 
-### 5. Frontend Setup
+### 5. Frontend
 ```bash
 cd ../frontend
-mkdir frontend  # if not exists
+mkdir frontend (if not there)
 cd frontend
 npm install
 npm run dev
@@ -124,45 +110,23 @@ npm run dev
 
 ---
 
-## 📌 Basic Usage
-
-1. Open the app at http://localhost:5173
-2. Enter/paste text or upload a document
-3. Click **Analyze Text**
-4. View highlights + sidebar entity list
-5. Use dashboard for detailed analytics
-6. Click any entity to highlight occurrences
-
----
-
-## 📊 Dataset Details
-
-The system supports multiple standard NER datasets:
+## Datasets
 
 ### CoNLL-2003
-- 14,000+ news articles
 - Entity types: PERSON, ORG, LOC, MISC
-- High-quality annotations
 
 ### WNUT-17
 - 3,394 social media texts
 - Noisy, real-world anomalies
 - Useful for informal language
 
-### OntoNotes 5.0 (optional)
+### OntoNotes 5.0
 - Large, multi-genre corpus
 - 18 entity categories
 
-### Why combined datasets?
-Combining datasets increases generalization for:
-- ✔ Informal text
-- ✔ News
-- ✔ Business documents
-- ✔ Academic content
-
 ---
 
-## 🧠 Algorithm / Model Used
+## Model
 
 ### NER Pipeline
 1. Tokenization
@@ -182,13 +146,6 @@ Combining datasets increases generalization for:
 - Higher accuracy (~91% F1)
 - Higher latency
 
-### Training Procedure
-1. Dataset selection (CoNLL / WNUT / OntoNotes)
-2. Convert to spaCy training format
-3. Train for 30 epochs
-4. Validate using precision, recall, F1
-5. Save custom model
-
 ### Custom Model Use
 ```python
 nlp = spacy.load("./custom_ner_model")
@@ -196,7 +153,7 @@ nlp = spacy.load("./custom_ner_model")
 
 ---
 
-## 📈 Results
+## Result
 
 ### Performance Metrics
 
@@ -205,29 +162,10 @@ nlp = spacy.load("./custom_ner_model")
 | spaCy small | 89% | 90% | 89.5% | 120 ms |
 | Transformer | 92% | 91% | 91.5% | 430 ms |
 
-### System Achievements
+### Achievements
 - ~90% F1 Score
 - <500 ms average latency
 - Supports documents up to 10k words
-- Smooth UI interaction
-
 ---
 
-## 📌 Conclusion
-
-This project successfully delivers a powerful, accessible NER system that enables anyone—technical or non-technical—to extract meaningful information from unstructured text. It integrates advanced NLP models with a clean, interactive interface, providing both accuracy and usability.
-
----
-
-## 🚀 Future Scope
-
-- Multilingual NER support (Hindi, Marathi, German, Arabic, etc.)
-- Mobile application (iOS/Android)
-- Relation Extraction (e.g., who works where)
-- Entity Linking to Wikipedia
-- Voice input analysis
-- Custom entity type creation through UI
-- Self-learning system using user corrections
-
----
 
